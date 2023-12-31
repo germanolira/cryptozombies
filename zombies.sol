@@ -23,6 +23,7 @@ contract ZombieFactory {
 
     // Declare a function named _createZombie. It will take two parameters: _name (a string), and _dna (a uint).
     function _createZombie(string _name, uint _dna) private {
+        // Inside the function, we'll create a Zombie named "zombie" (lowercase).
         zombies.push(Zombie(_name, _dna));
     }
 
