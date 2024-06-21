@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 
 // Pragma tells the compiler what version of Solidity we are using
-pragma solidity ^0.4.19;
+pragma solidity ^0.8.0;
 
 // Contract is the most fundamental concept of Solidity
 contract ZombieFactory {
