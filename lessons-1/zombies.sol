@@ -5,7 +5,7 @@ pragma solidity ^0.8.0;
 
 // Contract is the most fundamental concept of Solidity
 contract ZombieFactory {
-
+	event NewZombie(uint zombieId, string name, uint dna);
     // Declare our uint variable dnaDigits here (uint = unsigned integer)
     uint dnaDigits = 16;
     // Declare a uint named dnaModulus here, and set it equal to 10 to the power of dnaDigits.
@@ -25,7 +25,9 @@ contract ZombieFactory {
     // Always make functions private by default, and only make them public when you need to access them from outside the contract.
     function _createZombie(string memory _name, uint _dna) private {
         // Inside the function, we'll create a Zombie named "zombie" (lowercase).
-        zombies.push(Zombie(_name, _dna));
+        // zombies.push(Zombie(_name, _dna));
+				uint id = zombies.length;
+				emit NewZombie(id, _name, _dna);
     }
 
     function _generateRandomDna(string memory _str) private view returns (uint) {
