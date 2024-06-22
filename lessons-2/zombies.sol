@@ -23,6 +23,9 @@ contract ZombieFactory {
 
     // This mapping associates each zombie with its owner's address.
     mapping (uint => address) public zombieToOwner;
+    // This mapping is associated with the number of zombies each owner has.
+    // The address is the key and uint is the value.
+    mapping (address => uint) ownerZombieCount;
 
     // Declare a function named _createZombie. It will take two parameters: _name (a string), and _dna (a uint).
     // Always make functions private by default, and only make them public when you need to access them from outside the contract.
