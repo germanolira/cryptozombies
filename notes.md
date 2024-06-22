@@ -1,10 +1,8 @@
-## What's a L1
+## L1
+L1, ou Layer 1, refere-se à camada fundamental de uma blockchain, responsável pelo processamento principal de transações e pelo armazenamento de dados. Essas blockchains, como Bitcoin e Ethereum, são conhecidas por sua segurança e descentralização, mas muitas vezes enfrentam limitações em termos de escalabilidade e velocidade de transação. A L1 é onde as transações são finalizadas e validadas através de mecanismos de consenso, como Prova de Trabalho (PoW) ou Prova de Participação (PoS).
 
-L1 (Layer 1) refere-se à camada base de uma blockchain, como o Ethereum. É a camada principal onde todas as transações são registradas e validadas diretamente na blockchain.
-
-## What's a L2
-
-L2 (Layer 2) refere-se a soluções construídas sobre a camada base (L1) para melhorar a escalabilidade e eficiência. Exemplos de L2 no Ethereum incluem rollups e sidechains, que processam transações fora da cadeia principal e depois registram os resultados na L1.
+## L2
+L2, ou Layer 2, é um conjunto de soluções tecnológicas desenvolvidas para operar em cima de uma blockchain L1, com o objetivo de expandir sua capacidade sem comprometer a segurança. Essas soluções tratam das limitações de escalabilidade das L1s ao processar transações fora da cadeia principal, utilizando menos recursos e alcançando maior velocidade. Os dados resultantes são periodicamente consolidados e registrados na L1. Exemplos populares de L2 incluem rollups, sidechains e canais de estado, cada um oferecendo diferentes métodos para aliviar a carga da rede principal enquanto mantém a integridade e segurança dos dados.
 
 ## Rollups
 Rollups são soluções de Layer 2 (L2) que executam transações e cálculos fora da cadeia principal (L1) e, em seguida, enviam os dados processados de volta para a L1 em um pacote compactado. Existem dois tipos principais de rollups: Optimistic Rollups e ZK-Rollups. Optimistic Rollups assumem que todas as transações são válidas por padrão e apenas executam cálculos em caso de disputa. ZK-Rollups, por outro lado, utilizam provas de conhecimento zero para validar transações antes de serem retornadas à L1.
