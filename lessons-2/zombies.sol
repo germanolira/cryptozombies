@@ -21,6 +21,9 @@ contract ZombieFactory {
     // Public arrays have automatic getter methods, so we can retrieve the zombies from our contract.
     Zombie[] public zombies;
 
+    // This mapping associates each zombie with its owner's address.
+    mapping (uint => address) public zombieToOwner;
+
     // Declare a function named _createZombie. It will take two parameters: _name (a string), and _dna (a uint).
     // Always make functions private by default, and only make them public when you need to access them from outside the contract.
     function _createZombie(string memory _name, uint _dna) private {
